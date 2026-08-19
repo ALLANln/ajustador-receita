@@ -4,15 +4,14 @@ import FormularioPorcoes from './components/FormularioPorcoes';
 import IngredientesAjustados from './components/IngredientesAjustados';
 import './App.css';
 
-// Receita original, fixa, feita para 4 porções.
+// Receita original fixa feita para 4 porções.
 const PORCOES_BASE = 4;
 const FARINHA_BASE = 2; // xícaras
 const ACUCAR_BASE = 1;  // xícara
 const OVOS_BASE = 2;    // unidades
 const LEITE_BASE = 1;   // xícara
 
-// Toda a "conta" fica aqui fora, numa função separada.
-// Assim o JSX lá embaixo fica só mostrando o resultado, sem cálculo espalhado.
+// Toda a conta fica aqui fora, numa função separada
 function calcularReceita(porcoesDesejadas) {
   const fator = porcoesDesejadas / PORCOES_BASE;
 
